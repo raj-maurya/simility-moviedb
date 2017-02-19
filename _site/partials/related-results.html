@@ -1,0 +1,13 @@
+<div ng-if="pop.Response!=='False'">
+  <strong>Related Results: Enter genres to search! </strong><hr>
+
+  <ol class="rel-results">
+
+<!--<div id="orders1"></div> -->
+
+    <li dir-paginate="data in tsearch|itemsPerPage:30">
+
+      <a href="#" id="{{ $index + 1 }}" ng-click="update(movie)">{{ data.movie_title }}</a>, {{ data.title_year }}
+    </li>
+  </ol>
+</div>

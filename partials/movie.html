@@ -1,0 +1,52 @@
+
+
+
+<div ng-if="!mv">
+  Loading movie results...
+</div>
+
+
+<div class="row">
+<!--<ng-repeat="data in  mv"> -->
+<div   class="well well-lg" dir-paginate="data in mv|itemsPerPage:3" >
+
+
+<img ng-src="{{  'http://placehold.it/150x220&text=N/A' }}" class="thumbnail animated flip movie-poster">
+
+<span class="span-outer">
+  <a href="http://imdb.com/title/{{ data.movie_title }}" target="_blank">{{ data.movie_title }}</a>
+</span>  ( <strong>{{data.title_year}}</strong>)
+  <p><strong>Country:</strong> {{ data.country }} ({{ data.language }})</p>
+
+  <p class="outer-p">
+    <div class="inner-p">
+      <span class="label label-primary">Director :</span> {{ data.director_name }}
+    </div>
+    <div class="inner-p">
+      <span class="label label-primary">Actors :</span> {{ data.actor_1_name }} and {{data.actor_2_name}}
+    </div>
+    <div class="inner-p">
+      <span class="label label-primary">Genre :</span> {{ data.genres }}
+    </div>
+
+    <div class="inner-p">
+      <span class="label label-primary">Budget :</span> USD {{ data.budget }}
+    </div>
+    
+  </p>
+
+  <p class="outer-p-2">
+    <strong>Content Rating :</strong> <span class="label label-success"> {{ data.content_rating }} </span>
+  </p>
+
+
+
+</div>
+
+
+ <dir-pagination-controls   template-url="partials/dirPagination.tpl.html"></dir-pagination-controls>
+
+</div>
+<div ng-if="mv.Response==='False'">
+  No results found.
+</div>
