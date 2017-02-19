@@ -7,7 +7,7 @@
 
     <li dir-paginate="data in tsearch|itemsPerPage:30">
 
-      <a href="#" id="{{ $index + 1 }}" ng-click="update(movie)">{{ data.movie_title }}</a>, {{ data.title_year }}
+      <a href="{{data.movie_imdb_link}}" target="_blank" id="{{ $index + 1 }}" ng-click="update(movie)">{{ data.movie_title }}</a>, {{ data.title_year }}
     </li>
   </ol>
 </div>
