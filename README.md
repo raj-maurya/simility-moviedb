@@ -4,3 +4,8 @@ Simility movie database!
 ### view live wep app at http://websimility.herokuapp.com/
 
  - API: http://starlord.hackerearth.com/simility/movieslisting
+
+
+###To run (Instructions)
+
+ - Run the application using Jekyll (teminal: $Jekyll serve)
