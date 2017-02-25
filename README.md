@@ -9,3 +9,6 @@ Simility movie database!
 ###To run (Instructions)
 
  - Run the application using Jekyll (teminal: $Jekyll serve)
+
+### Note:
+ - https://websimility.herokuapp.com/ will not work correctly because API has "http" request and will give error! 
