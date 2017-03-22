@@ -3,6 +3,8 @@ Simility movie database!
 
 ### view live wep app at http://websimility.herokuapp.com/
 
+-. This Webapp can't be accessed over https because of API is served over http. 
+
  - API: http://starlord.hackerearth.com/simility/movieslisting
 
 
