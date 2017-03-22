@@ -3,12 +3,12 @@ Simility movie database!
 
 ### view live wep app at http://websimility.herokuapp.com/
 
--. This Webapp can't be accessed over https because of API is served over http. 
+- This Webapp can't be accessed over https because of API is served over http. 
 
  - API: http://starlord.hackerearth.com/simility/movieslisting
 
 
-###To run (Instructions)
+### To run (Instructions)
 
  - Run the application using Jekyll (teminal: $Jekyll serve)
  - Testing on codeship [Deployment]
